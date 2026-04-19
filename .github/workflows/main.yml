@@ -1,41 +1,38 @@
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479525, current: 6371925; changing to 6479526. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479526, current: 6375765; changing to 6479527. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170622, new offset= 107491606
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479527, current: 6379605; changing to 6479528. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479528, current: 6383445; changing to 6479529. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479529, current: 6387285; changing to 6479530. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170621, new offset= 107662227
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479530, current: 6391125; changing to 6479531. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479531, current: 6394965; changing to 6479532. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479532, current: 6398805; changing to 6479533. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170622, new offset= 107832849
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479533, current: 6402645; changing to 6479534. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479534, current: 6406485; changing to 6479535. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479535, current: 6410325; changing to 6479536. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479536, current: 6414165; [aist#0:1/aac @ 0x55cb08d35940] changing to 6479537. This may result in incorrect timestamps in the output file.
-timestamp discontinuity (stream id=257): -170622, new offset= 108003471
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479537, current: 6418005; changing to 6479538. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479538, current: 6421845; changing to 6479539. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479539, current: 6425685; changing to 6479540. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170621, new offset= 108174092
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479540, current: 6429525; changing to 6479541. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479541, current: 6433365; changing to 6479542. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479542, current: 6437205; changing to 6479543. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479543, current: 6441045; changing to 6479544. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170622, new offset= 108344714
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479544, current: 6444885; changing to 6479545. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479545, current: 6448725; changing to 6479546. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479546, current: 6452565; changing to 6479547. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479547, current: 6456405; changing to 6479548. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479548, current: 6460245; changing to 6479549. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479549, current: 6464085; changing to 6479550. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170622, new offset= 108515336
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479550, current: 6467925; changing to 6479551. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479551, current: 6471765; changing to 6479552. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479552, current: 6475605; changing to 6479553. This may result in incorrect timestamps in the output file.
-[mpegts @ 0x55c208c09b00] Non-monotonic DTS in output stream 0:1; previous: 6479553, current: 6479445; changing to 6479554. This may result in incorrect timestamps in the output file.
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170621, new offset= 108685957
-[aist#0:1/aac @ 0x55cb08d35940] timestamp discontinuity (stream id=257): -170622, new offset= 108856579
-[https @ 0x7f9d403e6180] HTTP error 404 Not Found
-[dash @ 0x55c205d2f500] Failed to open fragment of playlist
-[https @ 0x7f9d400c7fc0] HTTP error 404 Not Found
+name: Ultimate Live Re-Stream to YouTube
+on:
+  workflow_dispatch:
+    inputs:
+      stream_url:
+        description: 'ගංගා වීඩියෝ FB හෝ YouTube Live Link එක මෙතනට දෙන්න'
+        required: true
+      youtube_key:
+        description: 'ඔයාගේ YouTube Stream Key එක මෙතනට දෙන්න'
+        required: true
+
+jobs:
+  restream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Maximize Disk Space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc
+
+      - name: Install Tools (ffmpeg & yt-dlp)
+        run: |
+          sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+          sudo chmod a+rx /usr/local/bin/yt-dlp
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Re-Stream to YouTube
+        run: |
+          # yt-dlp මගින් වීඩියෝව ලබාගෙන ffmpeg හරහා timestamps නිවැරදි කර YouTube වෙත යවයි
+          yt-dlp -f "bestvideo[height<=480]+bestaudio/best[height<=480]" \
+          --no-check-certificate \
+          --no-playlist \
+          --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+          -o - "${{ github.event.inputs.stream_url }}" | \
+          ffmpeg -re -i pipe:0 \
+          -vcodec copy \
+          -acodec copy \
+          -fflags +genpts+igndts \
+          -avoid_negative_ts make_zero \
+          -f flv "rtmp://a.rtmp.youtube.com/live2/${{ github.event.inputs.youtube_key }}"
