@@ -24,15 +24,12 @@ jobs:
 
       - name: Re-Stream to YouTube
         run: |
-          # yt-dlp මගින් වීඩියෝව ලබාගෙන ffmpeg හරහා timestamps නිවැරදි කර YouTube වෙත යවයි
+          # මෙහිදී අපි libx264 පාවිච්චි කර වීඩියෝව අලුතින් Encode කරනවා (YouTube එකට ගැලපෙන ලෙස)
           yt-dlp -f "bestvideo[height<=480]+bestaudio/best[height<=480]" \
           --no-check-certificate \
-          --no-playlist \
           --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
           -o - "${{ github.event.inputs.stream_url }}" | \
           ffmpeg -re -i pipe:0 \
-          -vcodec copy \
-          -acodec copy \
-          -fflags +genpts+igndts \
-          -avoid_negative_ts make_zero \
+          -vcodec libx264 -preset veryfast -maxrate 2500k -bufsize 5000k -pix_fmt yuv420p \
+          -g 50 -acodec aac -b:a 128k -ar 44100 \
           -f flv "rtmp://a.rtmp.youtube.com/live2/${{ github.event.inputs.youtube_key }}"
