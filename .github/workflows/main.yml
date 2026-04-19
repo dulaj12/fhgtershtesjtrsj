@@ -20,20 +20,17 @@ jobs:
 
       - name: Video එක Download කිරීම
         run: |
-          # මෙහිදී සැබෑ බ්‍රවුසරයක් ලෙස හැසිරීමට Headers සහ User-Agent එකතු කර ඇත
           yt-dlp -f "bestvideo[height<=480]+bestaudio/best[height<=480]" \
           --no-check-certificate \
           --no-playlist \
-          --geo-bypass \
+          --merge-output-format mp4 \
           --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
-          --add-header "Accept-Language:en-US,en;q=0.9" \
-          --add-header "Referer:https://www.facebook.com/" \
           "${{ github.event.inputs.stream_url }}" \
-          -o "musical_show.mp4"
+          -o "musical_video.mp4"
 
       - name: Video එක Artifacts වලට Upload කිරීම
         uses: actions/upload-artifact@v4
         with:
           name: Musical-Video-File
-          path: musical_show.mp4
+          path: "*.mp4"
           retention-days: 1
