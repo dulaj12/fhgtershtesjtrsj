@@ -20,7 +20,7 @@ jobs:
 
       - name: Download Video
         run: |
-          # --live-from-start මගින් ලයිව් එකේ මුල සිටම බාගත කිරීමට උත්සාහ කරයි
+          # මෙතනදී වීඩියෝ එක musical_show_full.mp4 නමින්ම force කරනවා
           yt-dlp -f "bestvideo[height<=480]+bestaudio/best[height<=480]" \
           --no-check-certificate \
           --live-from-start \
@@ -29,9 +29,12 @@ jobs:
           -o "musical_show_full.mp4" \
           "${{ github.event.inputs.stream_url }}"
 
+      - name: Check file existence
+        run: ls -R
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: Full-Musical-Video
-          path: musical_show_full.mp4
+          path: "*.mp4"  # ෆෝල්ඩර් එකේ තියෙන ඕනෑම .mp4 ෆයිල් එකක් අප්ලෝඩ් කරයි
           retention-days: 1
