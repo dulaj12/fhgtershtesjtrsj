@@ -1,57 +1,29 @@
 name: Live Re-Stream to YouTube
-
 on:
-
   workflow_dispatch:
-
     inputs:
-
       stream_url:
-
-        description: 'https://web.facebook.com/watch/?v=27072447845672609'
-
+        description: 'ගංගා වීඩියෝ FB/YT Link එක'
         required: true
-
       youtube_key:
-
-        description: 'pewr-4swb-kg5j-j2dh-3z7s'
-
+        description: 'ඔයාගේ YouTube Stream Key එක'
         required: true
-
-
 
 jobs:
-
   restream:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Install ffmpeg & yt-dlp
-
         run: |
-
           sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-
           sudo chmod a+rx /usr/local/bin/yt-dlp
-
           sudo apt-get update && sudo apt-get install -y ffmpeg
 
-
-
       - name: Re-Stream to YouTube
-
         run: |
-
           # yt-dlp එකෙන් වීඩියෝ එක අරගෙන ffmpeg හරහා YouTube එකට යවනවා
-
           yt-dlp -f "bestvideo[height<=480]+bestaudio/best[height<=480]" \
-
           --no-check-certificate \
-
           --user-agent "Mozilla/5.0" \
-
           -o - "${{ github.event.inputs.stream_url }}" | \
-
           ffmpeg -i pipe:0 -vcodec copy -acodec copy -f flv "rtmp://a.rtmp.youtube.com/live2/${{ github.event.inputs.youtube_key }}"
